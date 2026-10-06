@@ -7,63 +7,67 @@
   body { margin: 0; overflow: hidden; font-family: "Microsoft YaHei", sans-serif; background: #1a1a2e; color: white; }
 
   #info {
-    position: absolute; top: 20px; left: 20px;
-    background: rgba(0,0,0,0.78);
-    padding: 14px 20px; border-radius: 10px;
-    font-size: 14px; line-height: 1.9; min-width: 260px;
+    position: absolute; top: 8px; left: 8px;
+    background: rgba(0,0,0,0.72);
+    padding: 6px 10px; border-radius: 6px;
+    font-size: 11px; line-height: 1.5; min-width: 150px;
+    pointer-events: none;
   }
-  #info h3 { margin: 0 0 8px; color: #66ccff; font-size: 16px; }
-  .row-info { display: flex; justify-content: space-between; gap: 16px; }
+  #info h3 { margin: 0 0 3px; color: #66ccff; font-size: 12px; }
+  .row-info { display: flex; justify-content: space-between; gap: 8px; }
   .val { color: #88ffbb; font-weight: bold; }
-  .big { color: #ffcc00; font-weight: bold; font-size: 16px; }
+  .big { color: #ffcc00; font-weight: bold; font-size: 12px; }
 
   #hint {
-    position: absolute; top: 20px; right: 20px;
-    background: rgba(0,0,0,0.7); padding: 12px 18px; border-radius: 8px;
-    font-size: 13px; line-height: 1.75; max-width: 230px; color: #aaccff;
+    position: absolute; top: 8px; right: 8px;
+    background: rgba(0,0,0,0.62); padding: 5px 9px; border-radius: 6px;
+    font-size: 10px; line-height: 1.45; max-width: 140px; color: #aaccff;
+    pointer-events: none;
   }
 
   #controls {
-    position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
-    background: rgba(0,0,0,0.9); padding: 18px 26px; border-radius: 12px;
-    display: flex; flex-direction: column; gap: 12px; min-width: 700px;
+    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,0.85); padding: 8px 12px; border-radius: 8px;
+    display: flex; flex-direction: column; gap: 5px;
+    max-width: calc(100vw - 20px);
   }
   .row {
-    display: flex; gap: 12px; align-items: center; justify-content: center;
+    display: flex; gap: 6px; align-items: center; justify-content: center;
     flex-wrap: wrap;
   }
-  .row label { font-size: 14px; color: #ccc; white-space: nowrap; }
+  .row label { font-size: 11px; color: #ccc; white-space: nowrap; }
   .row select, .row input[type=number] {
-    padding: 6px 10px; background: #1a1a2e; color: #ffcc00;
-    border: 1px solid #4488ff; border-radius: 6px;
-    font-size: 15px; font-weight: bold; font-family: inherit;
+    padding: 2px 5px; background: #1a1a2e; color: #ffcc00;
+    border: 1px solid #4488ff; border-radius: 4px;
+    font-size: 11px; font-weight: bold; font-family: inherit;
+    height: 20px;
   }
-  .row select { color: #88ccff; min-width: 100px; }
-  .row input[type=number] { width: 74px; text-align: center; }
+  .row select { color: #88ccff; min-width: 62px; }
+  .row input[type=number] { width: 50px; text-align: center; }
   .row input:disabled { opacity: 0.4; cursor: not-allowed; }
   .row input:focus, .row select:focus {
     outline: none; border-color: #66ccff;
-    box-shadow: 0 0 6px rgba(102,204,255,0.5);
   }
 
   #kRow {
-    display: flex; align-items: center; gap: 12px;
-    padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex; align-items: center; gap: 6px;
+    padding-top: 5px; border-top: 1px solid rgba(255,255,255,0.1);
   }
-  #kRow label { min-width: 80px; }
-  #kSlider { flex: 1; height: 6px; cursor: pointer; }
-  #kValue { color: #ffcc00; font-weight: bold; font-size: 16px; min-width: 55px; text-align: right; }
+  #kRow label { font-size: 11px; }
+  #kSlider { flex: 1; height: 4px; cursor: pointer; min-width: 120px; }
+  #kValue { color: #ffcc00; font-weight: bold; font-size: 11px; min-width: 34px; text-align: right; }
 
+  #btnRow { display: flex; gap: 5px; justify-content: center; }
   #btnRow button {
-    padding: 8px 22px; font-size: 14px;
-    border: none; border-radius: 6px; cursor: pointer;
+    padding: 3px 10px; font-size: 11px;
+    border: none; border-radius: 4px; cursor: pointer;
     background: #4488ff; color: white; font-weight: bold; font-family: inherit;
   }
   #btnRow button:hover { background: #3366cc; }
   #btnUnfold { background: #22aa66; } #btnUnfold:hover { background: #118855; }
   #btnFold { background: #cc7744; } #btnFold:hover { background: #aa5522; }
 
-  #warning { color: #ff8866; font-size: 13px; text-align: center; height: 16px; }
+  #warning { color: #ff8866; font-size: 10px; text-align: center; height: 11px; }
 </style>
 </head>
 <body>
